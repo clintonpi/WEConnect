@@ -142,6 +142,27 @@ footer {
       footer #footer-bottom #social a:hover {
         text-decoration: none !important; }
 
+/*********************
+Sign Up / Sign In Page
+*********************/
+.sign-main .all-page {
+  padding: 1%;
+  width: 700px;
+  max-width: 90%;
+  background-color: #053b6b;
+  background-image: url("../images/edge-skew.png");
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3); }
+.sign-main h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300; }
+.sign-main label {
+  font-size: 1.3rem; }
+.sign-main input {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none; }
+
 /*Media queries*/
 @media (max-width: 960px) {
   h1 {
