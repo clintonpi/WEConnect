@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="WEConnect view business">
+  <meta name="author" content="Clinton Nkwocha">
+  <meta name="keywords" content="WEConnect, WeConnect, WEconnect, business, view">
+  <title>WEConnect - View Business</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="gen-nav regbus-nav">
+    <div class="navbar-header">
+      <img src="../images/weconnect.png" alt="weconnect-logo">
+    </div>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="../index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="./regbus.html" class="nav-link">Register Business</a>
+      </li>
+      <li class="nav-item">
+        <a href="./catalogue.html" class="nav-link">Catalogue</a>
+      </li>
+      <li class="nav-item">
+        <a href="./signup.html" class="nav-link">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a href="./login.html" class="nav-link">Log in</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="gen-main regbus-main pt-2">
+    <section class="container" id="wrap">
+      <h1>Business Details</h1>
+      <div class="container-fluid row" id="bus-wrap">
+        <div class="col-md-7 business">
+          <span id="bus-det">Business Name:</span>
+          <br>
+          <p class="p-1">Tesla.inc</p>
+          <br>
+          <span id="bus-det">Business Location:</span>
+          <br>
+          <p class="p-1">U.S.A</p>
+          <br>
+          <span id="bus-det">Business Category:</span>
+          <br>
+          <p class="p-1">Technology</p>
+          <br>
+          <span id="bus-det">Business Desiption:</span>
+          <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime sint illum doloribus quia itaque architecto
+            laboriosam ipsam exercitationem at.</p>
+          <br>
+          <a href="#" class="btn btn-primary mb-2 form-control">Edit Business Profile</a>
+          <form action="#" method="post" class="mt-2">
+            <a href="./catalogue.html" class="btn btn-danger mb-2 form-control">Delete Business</a>
+          </form>
+        </div>
+        <div class="col-md-4 business">
+          <div class="container-fluid" id="img-box">
+            <img src="../images/technology.jpeg" alt="business image" class="img-fluid">
+          </div>
+          <form action="#" method="post" class="mt-2">
+            <button type="submit" id="button" class="btn btn-primary form-control mt-2">Add Review</button>
+            <textarea name="description" id="description" class="form-control" placeholder="Not more than 200 characters" maxlength="200"
+              required></textarea>
+          </form>
+          <a href="#reviews" class="btn btn-primary form-control mt-2">View Reviews</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section id="review-section" class="p-5">
+    <a name="reviews"></a>
+    <h1>Reviews</h1>
+    <div class="container">
+      <div class="container review-box row">
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>Elon Musk</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>A.Y</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+      </div>
+      <div class="container review-box row">
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>Ani Macaulay</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>Jeff Bezos</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+      </div>
+      <div class="container review-box row">
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>Brown Sindy</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+        <div class="container col-md-5 mt-3 mb-3 review-blocks">
+          <strong>Dark Knight</strong>
+          <br>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolor quasi modi incidunt dicta temporibus inventore ad aliquam, dignissimos consectetur delectus quia odit ducimus. Natus minima consectetur numquam iusto dolor?</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
