@@ -212,6 +212,43 @@ Register Business page
     padding: 0;
     text-align: center; }
 
+/*************
+Catalogue page
+*************/
+#catalogue-cover {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/main-background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  #catalogue-cover #catalogue-main .container-fluid {
+    padding: 0; }
+  #catalogue-cover #catalogue-main #catalogue-form input, #catalogue-cover #catalogue-main #catalogue-form select {
+    background-color: rgba(255, 255, 255, 0.7) !important; }
+  #catalogue-cover #catalogue-main #wrap {
+    color: white;
+    width: 75%; }
+    #catalogue-cover #catalogue-main #wrap .business-cards {
+      margin: 5px auto 10px; }
+      #catalogue-cover #catalogue-main #wrap .business-cards .img-wrap {
+        overflow: hidden;
+        background-image: url("../images/main-background.jpeg"); }
+      #catalogue-cover #catalogue-main #wrap .business-cards .card-block {
+        background-color: #053b6b;
+        background-image: url("../images/edge-skew.png");
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      #catalogue-cover #catalogue-main #wrap .business-cards h2 {
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+
 /*Media queries*/
 @media (max-width: 960px) {
   h1 {
@@ -243,7 +280,10 @@ Register Business page
       margin-top: 5px; }
 
   .gen-main {
-    padding-top: 8%; } }
+    padding-top: 8%; }
+
+  #catalogue-nav {
+    position: static !important; } }
 @media (max-width: 770px) {
   #social, #copyright {
     text-align: center !important; }

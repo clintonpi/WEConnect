@@ -323,6 +323,69 @@ Register Business page
 }
 
 
+/*************
+Catalogue page
+*************/
+
+#catalogue-cover {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/main-background.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+  #catalogue-main{
+    
+    .container-fluid {
+      padding: 0;
+    }
+    
+    #catalogue-form {
+      
+      input, select {
+        background-color: rgba(255, 255, 255, .7) !important;
+      }
+    }
+    
+    #wrap {
+      color: white;
+      width: 75%;
+      
+      
+      .business-cards {
+        margin: 5px auto 10px;
+
+        .img-wrap {
+          overflow: hidden; 
+          background-image: url('../images/main-background.jpeg');
+        }
+        
+        .card-block {
+          background-color: $darkblue;
+          background-image: url('../images/edge-skew.png');
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        
+        h2 {
+          text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        
+      }
+      
+    }
+  }
+}
+
+
 /*Media queries*/
 
 @media (max-width: 960px) {
@@ -375,6 +438,10 @@ Register Business page
   
   .gen-main {
     padding-top: 8%;
+  }
+  
+  #catalogue-nav{
+    position: static !important;
   }
 
 }
