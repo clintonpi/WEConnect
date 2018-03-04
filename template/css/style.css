@@ -249,6 +249,18 @@ Catalogue page
         text-overflow: ellipsis;
         white-space: nowrap; }
 
+/*************
+Review Section
+*************/
+#review-section {
+  min-height: 100vh;
+  background-color: #053b6b;
+  background-image: url("../images/edge-skew.png");
+  background-attachment: fixed; }
+  #review-section .review-blocks {
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden; }
+
 /*Media queries*/
 @media (max-width: 960px) {
   h1 {

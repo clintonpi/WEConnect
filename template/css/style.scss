@@ -384,6 +384,22 @@ Catalogue page
     }
   }
 }
+    
+
+/*************
+Review Section
+*************/
+#review-section {
+  min-height: 100vh;
+  background-color: $darkblue;
+  background-image: url('../images/edge-skew.png');
+  background-attachment: fixed;
+
+  .review-blocks {
+    background-color: rgba(255, 255, 255, .1);
+    overflow: hidden;
+  }
+}
 
 
 /*Media queries*/
@@ -439,7 +455,7 @@ Catalogue page
   .gen-main {
     padding-top: 8%;
   }
-  
+
   #catalogue-nav{
     position: static !important;
   }
