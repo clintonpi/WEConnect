@@ -1,0 +1,187 @@
+body {
+  font-size: 16px;
+  color: white; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center; }
+
+/*Navigation Bar*/
+.gen-nav {
+  position: absolute; }
+
+nav {
+  width: 100%;
+  padding: 10px !important;
+  background-color: #053b6b;
+  background-image: url("../images/edge-skew.png");
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav a {
+    color: white;
+    border-radius: 3px;
+    margin-left: 20px; }
+    nav a:hover, nav a:focus {
+      background-color: #0294e1 !important;
+      color: white;
+      outline: none; }
+    nav a:focus {
+      background-color: transparent !important; }
+  nav .active {
+    background-color: #0294e1 !important;
+    color: white;
+    outline: none; }
+  nav img {
+    max-width: 85%; }
+
+/*Main Section*/
+.gen-main {
+  background-image: url("../images/main-background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+
+#index-main #jumbotron {
+  padding-left: 2%;
+  padding-right: 2%;
+  min-height: 40vh;
+  max-width: 90vw;
+  text-align: center;
+  background-color: #053b6b;
+  background-image: url("../images/edge-skew.png");
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden; }
+  #index-main #jumbotron p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 200; }
+  #index-main #jumbotron a {
+    padding: 15px;
+    margin: 15px;
+    color: white; }
+
+#learn-more {
+  width: 100%;
+  min-height: 50vh;
+  padding: 4% 10px !important;
+  background-color: #053b6b;
+  background-image: url("../images/edge-skew.png"); }
+  #learn-more .row {
+    margin: auto; }
+  #learn-more #about {
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    margin: auto; }
+    #learn-more #about p {
+      text-align: left;
+      width: 100%;
+      font-size: 1.3rem;
+      line-height: 1.3em;
+      font-weight: 200; }
+    #learn-more #about #properties-wrap {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      display: flex; }
+      #learn-more #about #properties-wrap .properties {
+        color: white;
+        border: .5px solid white;
+        border-radius: 100%;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        padding: 20px; }
+
+/*Footer*/
+footer {
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("../images/main-background.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 3%; }
+  footer a {
+    color: white;
+    outline: none;
+    margin-left: 20px; }
+    footer a:hover {
+      color: white; }
+  footer #footer-top {
+    min-height: 40vh;
+    width: 100%;
+    margin: auto; }
+    footer #footer-top .info {
+      margin: auto;
+      height: 100%; }
+    footer #footer-top a {
+      line-height: 2em;
+      white-space: nowrap; }
+  footer #footer-bottom {
+    min-height: 10vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    border-top: 1px solid white; }
+    footer #footer-bottom #copyright {
+      text-align: left; }
+    footer #footer-bottom #social {
+      text-align: right; }
+      footer #footer-bottom #social a:hover {
+        text-decoration: none !important; }
+
+/*Media queries*/
+@media (max-width: 960px) {
+  h1 {
+    font-size: 3rem; }
+
+  p {
+    font-size: 1rem; }
+
+  nav {
+    display: block; }
+    nav * {
+      text-align: center !important; }
+    nav ul {
+      margin-top: 10px; }
+      nav ul li {
+        margin: auto !important; }
+
+  .gen-nav {
+    position: static !important;
+    height: auto !important; }
+
+  .gen-main {
+    padding-bottom: 10px; } }
+@media (max-width: 830px) {
+  nav ul {
+    display: block !important; }
+    nav ul a {
+      margin-left: 0;
+      margin-top: 5px; }
+
+  .gen-main {
+    padding-top: 8%; } }
+@media (max-width: 770px) {
+  #social, #copyright {
+    text-align: center !important; }
+
+  #copyright {
+    margin: auto; } }
+@media (max-width: 329px) {
+  .info {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
