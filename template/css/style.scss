@@ -1,0 +1,289 @@
+$lightblue: #0294e1;
+$darkblue: #053b6b;
+
+
+body {
+  font-size: 16px;
+  color: white;
+  // min-width: 315px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+/*Navigation Bar*/
+
+//general nav for pages with single full-screen-view
+.gen-nav {
+  position: absolute;
+}
+
+nav {
+  width: 100%;
+  padding: 10px !important;
+  background-color: $darkblue;
+  background-image: url('../images/edge-skew.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: white;
+    border-radius: 3px;
+    margin-left: 20px;
+
+    &:hover, &:focus {
+      background-color: $lightblue !important;
+      color: white;
+      outline: none;
+    }
+
+     &:focus {
+      background-color: transparent !important;
+    }
+    
+  }
+
+  .active {
+    background-color: $lightblue !important;
+    color: white;
+    outline: none;
+  }    
+
+  img {
+    max-width: 85%;
+  }
+
+}
+
+/*Main Section*/
+
+.gen-main {
+  background-image: url('../images/main-background.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+#index-main {
+
+  #jumbotron {
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 40vh;
+    max-width: 90vw;
+    text-align: center;
+    background-color: $darkblue;
+    background-image: url('../images/edge-skew.png');
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+
+    p {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 200;
+    }
+
+    a {
+      padding: 15px;
+      margin: 15px;
+      color: white;
+    }
+  }
+
+}
+
+#learn-more {
+  width: 100%;
+  min-height: 50vh;
+  padding: 4% 10px !important;
+  background-color: $darkblue;
+  background-image: url('../images/edge-skew.png');
+
+  .row {
+    margin: auto;
+  }
+
+  #about {
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    p {
+      text-align: left;
+      width: 100%;
+      font-size: 1.3rem;
+      line-height: 1.3em;
+      font-weight: 200;
+    }
+  
+    #properties-wrap {
+      width: 100%;
+      background-color: rgba(255, 255, 255, .05);
+      display: flex;
+
+      .properties {
+        color: white;
+        border: .5px solid white;
+        border-radius: 100%;
+        width: 100px;
+        max-width: 100px;
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+
+  }
+
+}
+
+/*Footer*/
+
+footer {
+  min-height: 50vh;
+  width: 100%;
+  background-image: url('../images/main-background.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 0 3%;
+  
+  a {
+    color: white;
+    outline: none;
+    margin-left: 20px;
+          
+    &:hover {
+      color: white;
+    }
+  }
+
+  #footer-top {
+    min-height: 40vh;
+    width: 100%;
+    margin: auto;
+
+    .info {
+      margin: auto;
+      height: 100%;
+    }
+
+    a {
+      line-height: 2em;
+      white-space: nowrap;
+    }
+
+  }
+
+  #footer-bottom {
+    min-height: 10vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    border-top: 1px solid white;
+    
+    #copyright {
+      text-align: left;
+    }
+
+    #social {
+      text-align: right;
+      a {
+          &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+    
+  }
+  
+}
+
+/*Media queries*/
+
+@media (max-width: 960px) {
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  nav {
+    display: block;
+    *{
+      text-align: center !important;
+    }
+    
+    ul {
+      margin-top: 10px;
+      
+      li {
+        margin: auto !important;
+      }
+    }
+  }
+  
+  .gen-nav  {
+    position: static !important;
+    height: auto !important;
+  }
+
+  .gen-main {
+    padding-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 830px) {
+  nav {    
+    ul {
+      display: block !important;
+
+      a {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  .gen-main {
+    padding-top: 8%;
+  }
+
+}
+
+
+@media (max-width: 770px) {
+  #social, #copyright {
+    text-align: center !important;
+  }
+
+  #copyright {
+    margin: auto;
+  }
+}
+
+@media (max-width: 329px) {
+  .info {
+    text-align: center;
+  }
+}
