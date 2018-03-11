@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="WEConnect register business">
+  <meta name="author" content="Clinton Nkwocha">
+  <meta name="keywords" content="WEConnect, WeConnect, WEconnect, business, profile">
+  <title>WEConnect - Edit Business Profile</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <nav class="gen-nav regbus-nav">
+    <div class="navbar-header">
+      <img src="../images/weconnect.png" alt="weconnect-logo">
+    </div>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="../index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="./regbus.html" class="nav-link">Register Business</a>
+      </li>
+      <li class="nav-item">
+        <a href="./catalogue.html" class="nav-link">Catalogue</a>
+      </li>
+      <li class="nav-item">
+        <a href="./signup.html" class="nav-link">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a href="./login.html" class="nav-link">Log in</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="gen-main regbus-main">
+    <section class="container" id="wrap">
+      <h1>Edit Business Profile</h1>
+      <div class="container-fluid row" id="bus-wrap">
+        <div class="col-md-7 business">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name" required>Business Name:</label>
+              <br>
+              <input type="text" name="bus-name" id="name" class="form-control" required>
+              <br>
+              <label for="location" required>Business Location:</label>
+              <br>
+              <input type="text" name="location" id="location" class="form-control" required>
+              <br>
+              <label for="category" required>Business Category:</label>
+              <br>
+              <select name="category" id="category" class="form-control custom-select">
+                <option value="select">select a category</option>
+                <option value="all">All</option>
+                <option value="technology">Technology</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="medicine">medicine</option>
+                <option value="food">food</option>
+                <option value="others">Others</option>
+              </select>
+              <br>
+              <label for="description" required>Business Description:</label>
+              <br>
+              <textarea name="description" id="description" class="form-control" placeholder="Not more than 200 characters" maxlength="200" required></textarea>
+              <br>
+              <button id="button" class="btn btn-primary form-control">Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4 business">
+          <label for="review">Personal Review (optional)</label>
+          <br>
+          <textarea name="review" id="review" class="form-control" placeholder="Not more than 100 characters" maxlength="100"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
