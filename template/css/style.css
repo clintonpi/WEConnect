@@ -305,5 +305,11 @@ Review Section
 @media (max-width: 329px) {
   .info {
     text-align: center; } }
+@media (max-height: 770px) {
+  nav {
+    position: static !important; }
+
+  main {
+    padding: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
