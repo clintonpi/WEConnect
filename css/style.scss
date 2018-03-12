@@ -394,7 +394,7 @@ Review Section
   background-color: $darkblue;
   background-image: url('../images/edge-skew.png');
   background-attachment: fixed;
-
+  
   .review-blocks {
     background-color: rgba(255, 255, 255, .1);
     overflow: hidden;
@@ -403,6 +403,7 @@ Review Section
 
 
 /*Media queries*/
+
 
 @media (max-width: 960px) {
   
@@ -433,7 +434,7 @@ Review Section
     position: static !important;
     height: auto !important;
   }
-
+  
   .gen-main {
     padding-bottom: 10px;
   }
@@ -455,7 +456,7 @@ Review Section
   .gen-main {
     padding-top: 8%;
   }
-
+  
   #catalogue-nav{
     position: static !important;
   }
@@ -476,5 +477,15 @@ Review Section
 @media (max-width: 329px) {
   .info {
     text-align: center;
+  }
+}
+
+@media (max-height: 770px) {
+  nav {
+    position: static !important;
+  }
+  
+  main {
+    padding: 20px;
   }
 }
