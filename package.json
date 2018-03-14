@@ -1,0 +1,38 @@
+{
+  "name": "weconnect",
+  "version": "1.0.0",
+  "description": "WEConnect provides a platform that brings businesses and individuals together. This platform creates awareness for businesses and gives the users the ability to write reviews about the businesses they have interacted with.",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel server template app.js -d dist && nodemon",
+    "lint": "eslint ./ || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clintonpi/WEConnect.git"
+  },
+  "keywords": [
+    "WEConnect",
+    "business"
+  ],
+  "author": "Clinton Nkwocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clintonpi/WEConnect/issues"
+  },
+  "homepage": "https://github.com/clintonpi/WEConnect#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "eslint": "^4.18.2",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.1"
+  },
+  "devDependencies": {
+    "eslint-config": "^0.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
