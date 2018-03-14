@@ -6,3 +6,6 @@ dist
 
 # Logs
 npm-debug.log
+
+
+.eslintignore
