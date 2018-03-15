@@ -4,8 +4,8 @@ const { business } = fakeDb;
 
 /**
  * @class BusinessController
- * @classdesc Implements user being able to register a business,
- *  update business profile and delete business
+ * @classdesc Implements user being able to register a business, update business profile,
+ *  delete a business and get a business
  */
 class BusinessController {
   /**
@@ -92,6 +92,29 @@ class BusinessController {
     res.status(200).json({
       message: 'Business deleted successfully!',
       data: deletedBusiness
+    });
+  }
+
+  /**
+   * Get A Business
+   *
+   * @static
+   * @param {object} req - The request object
+   * @param {object} res - The response object
+   * @return {object} Message and gotten business data
+   * @memberof BusinessController
+   */
+  static getBusiness(req, res) {
+    const businessId = parseInt(req.params.id, 10);
+    let gottenBusiness;
+    business.forEach((bus) => {
+      if (bus.id === businessId) {
+        gottenBusiness = bus;
+      }
+    });
+    res.status(200).json({
+      message: 'Business gotten successfully!',
+      data: gottenBusiness
     });
   }
 }
