@@ -6,6 +6,6 @@ const dummyModels = {
   business,
   review,
   user
-}
+};
 
 export default dummyModels;
