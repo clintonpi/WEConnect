@@ -5,7 +5,7 @@ const { business } = fakeDb;
 /**
  * @class BusinessController
  * @classdesc Implements user being able to register a business, update business profile,
- *  delete a business and get a business
+ *  delete a business, get a business and get all businesses
  */
 class BusinessController {
   /**
@@ -115,6 +115,22 @@ class BusinessController {
     res.status(200).json({
       message: 'Business gotten successfully!',
       data: gottenBusiness
+    });
+  }
+
+  /**
+   * Get All Businesses
+   *
+   * @static
+   * @param {object} req - The request object
+   * @param {object} res - The response object
+   * @return {object} Message and all businesses data
+   * @memberof BusinessController
+   */
+  static getAllBusinesses(req, res) {
+    res.status(200).json({
+      message: 'Businesses gotten successfully!',
+      data: business
     });
   }
 }
