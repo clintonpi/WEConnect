@@ -6,13 +6,13 @@ const {
   registerBusiness, updateBusinessProfile, deleteBusiness, getBusiness, getAllBusinesses
 } = BusinessController;
 
-const { getByLocation } = BusinessMiddleware;
+const { getByLocation, getByCategory } = BusinessMiddleware;
 
 const businessRouter = express.Router();
 
 businessRouter.route('/businesses')
   .post(registerBusiness)
-  .get(getByLocation, getAllBusinesses);
+  .get(getByLocation, getByCategory, getAllBusinesses);
 
 businessRouter.route('/businesses/:businessId')
   .put(updateBusinessProfile)
