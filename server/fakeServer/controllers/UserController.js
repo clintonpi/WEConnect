@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import fakeDb from '../dummyModels/index';
 
-const { user } = fakeDb;
+const { users } = fakeDb;
 
 /**
  * @class UserController
@@ -21,15 +21,15 @@ class UserController {
     const hashPassword = bcrypt.hashSync(req.body.password, 12);
     const { username, email } = req.body;
     const newUser = {
-      id: user[user.length - 1].id + 1,
+      id: users[users.length - 1].id + 1,
       username,
       email,
       password: hashPassword
     };
-    user.push(newUser);
+    users.push(newUser);
     res.status(201).json({
       message: 'Signed up successfully!',
-      data: user[user.length - 1]
+      data: users[users.length - 1]
     });
   }
 

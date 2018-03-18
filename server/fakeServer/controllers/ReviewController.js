@@ -1,6 +1,6 @@
 import fakeDb from '../dummyModels/index';
 
-const { review } = fakeDb;
+const { reviews } = fakeDb;
 
 /**
  * @class ReviewController
@@ -17,20 +17,20 @@ class ReviewController {
    * @memberof ReviewController
    */
   static postReview(req, res) {
-    const businessId = parseInt(req.params.id, 10);
+    const businessId = parseInt(req.params.businessId, 10);
     const {
       userId, content
     } = req.body;
     const newReview = {
-      id: review[review.length - 1].id + 1,
+      id: reviews[reviews.length - 1].id + 1,
       businessId,
       userId,
       content
     };
-    review.push(newReview);
+    reviews.push(newReview);
     res.status(201).json({
       message: 'Review posted successfully!',
-      data: review[review.length - 1]
+      data: reviews[reviews.length - 1]
     });
   }
 
@@ -44,11 +44,11 @@ class ReviewController {
    * @memberof ReviewController
    */
   static getAllReviews(req, res) {
-    const businessId = parseInt(req.params.id, 10);
+    const businessId = parseInt(req.params.businessId, 10);
     const businessReview = [];
-    review.forEach((rev) => {
-      if (rev.businessId === businessId) {
-        businessReview.push(rev);
+    reviews.forEach((review) => {
+      if (review.businessId === businessId) {
+        businessReview.push(review);
       }
     });
     res.status(200).json({

@@ -1,6 +1,6 @@
 import fakeDb from '../dummyModels/index';
 
-const { business } = fakeDb;
+const { businesses } = fakeDb;
 
 /**
  * @class BusinessController
@@ -22,17 +22,17 @@ class BusinessController {
       name, location, category, description, userId
     } = req.body;
     const newBusiness = {
-      id: business[business.length - 1].id + 1,
+      id: businesses[businesses.length - 1].id + 1,
       name,
       location,
       category,
       description,
       userId
     };
-    business.push(newBusiness);
+    businesses.push(newBusiness);
     res.status(201).json({
       message: 'Business registered successfully!',
-      data: business[business.length - 1]
+      data: businesses[businesses.length - 1]
     });
   }
 
@@ -49,7 +49,7 @@ class BusinessController {
     const {
       name, location, category, description, userId
     } = req.body;
-    const businessId = parseInt(req.params.id, 10);
+    const businessId = parseInt(req.params.businessId, 10);
     const editedBusinessProfile = {
       id: businessId,
       name,
@@ -58,10 +58,10 @@ class BusinessController {
       description,
       userId
     };
-    business.forEach((bus) => {
-      if (bus.id === businessId) {
-        const businessIndex = business.indexOf(bus);
-        business.splice(businessIndex, 1, editedBusinessProfile);
+    businesses.forEach((business) => {
+      if (business.id === businessId) {
+        const businessIndex = businesses.indexOf(business);
+        businesses.splice(businessIndex, 1, editedBusinessProfile);
       }
     });
     res.status(200).json({
@@ -80,13 +80,13 @@ class BusinessController {
    * @memberof BusinessController
    */
   static deleteBusiness(req, res) {
-    const businessId = parseInt(req.params.id, 10);
+    const businessId = parseInt(req.params.businessId, 10);
     let deletedBusiness;
-    business.forEach((bus) => {
-      if (bus.id === businessId) {
-        const businessIndex = business.indexOf(bus);
-        deletedBusiness = bus;
-        business.splice(businessIndex, 1);
+    businesses.forEach((business) => {
+      if (business.id === businessId) {
+        const businessIndex = businesses.indexOf(business);
+        deletedBusiness = business;
+        businesses.splice(businessIndex, 1);
       }
     });
     res.status(200).json({
@@ -105,11 +105,11 @@ class BusinessController {
    * @memberof BusinessController
    */
   static getBusiness(req, res) {
-    const businessId = parseInt(req.params.id, 10);
+    const businessId = parseInt(req.params.businessId, 10);
     let gottenBusiness;
-    business.forEach((bus) => {
-      if (bus.id === businessId) {
-        gottenBusiness = bus;
+    businesses.forEach((business) => {
+      if (business.id === businessId) {
+        gottenBusiness = business;
       }
     });
     res.status(200).json({
@@ -130,7 +130,7 @@ class BusinessController {
   static getAllBusinesses(req, res) {
     res.status(200).json({
       message: 'Businesses gotten successfully!',
-      data: business
+      data: businesses
     });
   }
 }

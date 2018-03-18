@@ -1,11 +1,11 @@
 import express from 'express';
-import review from '../controllers/ReviewController';
+import reviews from '../controllers/ReviewController';
 
-const { postReview, getAllReviews } = review;
+const { postReview, getAllReviews } = reviews;
 
 const reviewRouter = express.Router();
 
-reviewRouter.route('/businesses/:id/reviews')
+reviewRouter.route('/businesses/:businessId/reviews')
   .post(postReview)
   .get(getAllReviews);
 

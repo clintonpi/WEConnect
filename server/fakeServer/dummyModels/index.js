@@ -1,11 +1,11 @@
-import business from './business';
-import review from './review';
-import user from './user';
+import businesses from './businesses';
+import reviews from './reviews';
+import users from './users';
 
 const dummyModels = {
-  business,
-  review,
-  user
+  businesses,
+  reviews,
+  users
 };
 
 export default dummyModels;

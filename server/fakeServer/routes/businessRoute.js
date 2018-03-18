@@ -1,9 +1,9 @@
 import express from 'express';
-import business from '../controllers/BusinessController';
+import businesses from '../controllers/BusinessController';
 
 const {
   registerBusiness, updateBusinessProfile, deleteBusiness, getBusiness, getAllBusinesses
-} = business;
+} = businesses;
 
 const businessRouter = express.Router();
 
@@ -11,7 +11,7 @@ businessRouter.route('/businesses')
   .post(registerBusiness)
   .get(getAllBusinesses);
 
-businessRouter.route('/businesses/:id')
+businessRouter.route('/businesses/:businessId')
   .put(updateBusinessProfile)
   .delete(deleteBusiness)
   .get(getBusiness);

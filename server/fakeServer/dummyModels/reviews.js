@@ -1,4 +1,4 @@
-const review = [
+const reviews = [
   {
     id: 1,
     businessId: 1,
@@ -31,4 +31,4 @@ const review = [
   }
 ];
 
-export default review;
+export default reviews;

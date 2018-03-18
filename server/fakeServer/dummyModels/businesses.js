@@ -1,4 +1,4 @@
-const business = [
+const businesses = [
   {
     id: 1,
     name: 'Tesla.inc',
@@ -41,4 +41,4 @@ const business = [
   }
 ];
 
-export default business;
+export default businesses;
