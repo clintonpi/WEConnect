@@ -1,9 +1,9 @@
 import express from 'express';
-import businesses from '../controllers/BusinessController';
+import BusinessController from '../controllers/BusinessController';
 
 const {
   registerBusiness, updateBusinessProfile, deleteBusiness, getBusiness, getAllBusinesses
-} = businesses;
+} = BusinessController;
 
 const businessRouter = express.Router();
 

@@ -1,7 +1,7 @@
 import express from 'express';
-import reviews from '../controllers/ReviewController';
+import ReviewController from '../controllers/ReviewController';
 
-const { postReview, getAllReviews } = reviews;
+const { postReview, getAllReviews } = ReviewController;
 
 const reviewRouter = express.Router();
 
