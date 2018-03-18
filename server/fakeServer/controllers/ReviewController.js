@@ -17,7 +17,7 @@ class ReviewController {
    * @memberof ReviewController
    */
   static postReview(req, res) {
-    const businessId = req.params.id;
+    const businessId = parseInt(req.params.id, 10);
     const {
       userId, content
     } = req.body;
