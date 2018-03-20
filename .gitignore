@@ -1,0 +1,11 @@
+# Dependency Directories
+node_modules
+
+# Transpiled files
+dist
+
+# Logs
+npm-debug.log
+
+
+.eslintignore
