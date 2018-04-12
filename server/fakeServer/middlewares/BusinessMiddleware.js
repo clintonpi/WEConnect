@@ -8,6 +8,32 @@ const { businesses } = fakeDb;
  */
 class BusinessMiddleware {
   /**
+   * Get Businesses By Location and Category
+   *
+   * @static
+   * @param {object} req - The request object
+   * @param {object} res - The response object
+   * @param {function} next - The next middleware
+   * @return {object} Message and data of the business(es)
+   * @memberof BusinessController
+   */
+  static getByLocAndCat(req, res, next) {
+    const { location, category } = req.query;
+    if (!location || !category) {
+      return next();
+    }
+    const filteredBusinesses
+        = businesses.filter(business =>
+          business.location.toLowerCase() === location.toLowerCase()
+          && business.category.toLowerCase() === category.toLowerCase());
+
+    res.status(200).send({
+      message: `Gotten business(es) located at ${location} under ${category} category`,
+      data: filteredBusinesses
+    });
+  }
+
+  /**
    * Get Business(es) By Location
    *
    * @static
